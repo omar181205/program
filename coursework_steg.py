@@ -1,3 +1,5 @@
+# coursework
+
 def encode_text(text):
     """Encodes text into a binary string."""
     binary_text = ''.join(format(ord(char), '08b') for char in text)
