@@ -1,13 +1,13 @@
 def encode_text(text):
     return ''.join(format(ord(char), '08b') for char in text)
 
-# # def test_encode_text():
-# #     print("Testing encode_text...")
-# #     assert encode_text("A") == "0100001", "Failed: Single character 'A'"
-# #     assert encode_text("Hi") == "0100100001101001", "Failed: Word 'Hi'"
-# #     assert encode_text("") == "", "Failed: Empty string"
-# #     print("Passed:encode_text")
-# # test_encode_text()
+def test_encode_text():
+     print("Testing encode_text...")
+     assert encode_text("A") == "0100001", "Failed: Single character 'A'"
+     assert encode_text("Hi") == "0100100001101001", "Failed: Word 'Hi'"
+     assert encode_text("") == "", "Failed: Empty string"
+     print("Passed:encode_text")
+test_encode_text()
 
 
 def modify_pixel(byte, bit):
